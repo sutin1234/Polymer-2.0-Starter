@@ -1,0 +1,23 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<dom-module id="hello-polymer">
+    <template>
+  <style>
+    :host {
+      display: inline-block;
+    }
+  </style>
+  <h2>Hellow Polymer Web Progressive</h2>
+</template>
+    <script>
+        class HellowPolymer extends Polymer.Element {
+            static get is() {
+                return 'hello-polymer';
+            }
+            constructor() {
+                super();
+                console.log('Hello Polymer DidLoaded');
+            }
+        }
+        customElements.define(HellowPolymer.is, HellowPolymer);
+    </script>
+</dom-module>
