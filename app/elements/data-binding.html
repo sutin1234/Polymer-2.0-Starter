@@ -1,0 +1,36 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<dom-module id="data-biding">
+    <template>
+    <style>
+      :host {
+        display:inline-block;
+      }
+    </style>
+    <h4>{{ data }}</h4>
+  </template>
+    <script>
+        class BindingElement extends Polymer.Element {
+            static get is() {
+                return 'data-biding';
+            }
+            static get properties() {
+                return {
+                    data: {
+                        type: String
+                    }
+                }
+            }
+            connectedCallback() {
+                super.connectedCallback();
+                console.log('callback connected.');
+                console.log(this.data);
+            }
+            constructor() {
+                super();
+                console.log('Binding lement DidLoaded');
+            }
+        }
+        customElements.define(BindingElement.is, BindingElement);
+    </script>
+</dom-module>
