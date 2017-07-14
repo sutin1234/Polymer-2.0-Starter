@@ -1,0 +1,26 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<dom-module id="binding-attribute">
+    <template>
+  <h2>Attribute Binding: {{attrValue}}</h2>
+</template>
+    <script>
+        class AttributeBinding extends Polymer.Element {
+            static get is() {
+                return "binding-attribute"
+            }
+            static get properties() {
+                return {
+                    attrValue: {
+                        type: String
+                    }
+                }
+            }
+            constructor() {
+                super();
+                console.log('AttributeBinding DidLoaded');
+            }
+        }
+        customElements.define(AttributeBinding.is, AttributeBinding);
+    </script>
+</dom-module>

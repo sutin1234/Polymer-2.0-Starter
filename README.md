@@ -30,6 +30,7 @@ http://127.0.0.1:8081/app
 
 # Content Tutorial
 - hello world polymer 2.0
+- attribute binding
 - one way data binding
 - two way data binding
 
