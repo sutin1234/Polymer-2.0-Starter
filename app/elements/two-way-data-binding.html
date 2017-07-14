@@ -1,0 +1,30 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<dom-module id="two-way-data-binding">
+    <template>
+    <h2>Two way data bining: {{dataBinding}} </h2>
+    <div>
+      <input type="text" value="{{dataBinding::input}}">
+    </div>
+  </template>
+    <script>
+        class TwoWayDataBinding extends Polymer.Element {
+            static get is() {
+                return "two-way-data-binding"
+            }
+            static get properties() {
+                return {
+                    dataBinding: {
+                        type: String,
+                        notify: true,
+                        value: 'Value data binding'
+                    }
+                }
+            }
+            constructor() {
+                super();
+                console.log('TwoWayDataBinding DidLoaded');
+            }
+        }
+        customElements.define(TwoWayDataBinding.is, TwoWayDataBinding);
+    </script>
+</dom-module>

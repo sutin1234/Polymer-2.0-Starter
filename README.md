@@ -28,3 +28,8 @@ Polymer 2.0 Web Progressive
 # See On the Browser
 http://127.0.0.1:8081/app
 
+# Content Tutorial
+- hello world polymer 2.0
+- one way data binding
+- two way data binding
+
