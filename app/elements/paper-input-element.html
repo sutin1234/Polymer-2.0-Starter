@@ -1,0 +1,20 @@
+<dom-module id="paper-input-element">
+    <template>
+      <h3>Normal Input</h3>
+        <paper-input></paper-input>
+        <h3>Input Floating</h3>
+        <paper-input always-float-label label="Floating label"></paper-input>
+    </template>
+    <script>
+        class PaperInputElement extends Polymer.Element {
+            static get is() {
+                return 'paper-input-element';
+            }
+            constructor() {
+                super();
+                console.log('PaperInputElement DidLoaded');
+            }
+        }
+        customElements.define(PaperInputElement.is, PaperInputElement);
+    </script>
+</dom-module>

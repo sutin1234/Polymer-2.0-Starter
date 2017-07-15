@@ -33,4 +33,7 @@ http://127.0.0.1:8081/app
 - attribute binding
 - one way data binding
 - two way data binding
+- install paper-element#2.0
+- add & use paper-input#2.0-preview
+- add & use paper-button#2.0
 

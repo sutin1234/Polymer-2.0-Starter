@@ -1,0 +1,21 @@
+<dom-module id="paper-button-element">
+    <template>
+    <h3>Paper button</h3>
+    <paper-button class="pink">link</paper-button>
+    <paper-button raised class="indigo">raised</paper-button>
+    <paper-button toggles raised class="green">toggles</paper-button>
+    <paper-button disabled class="disabled">disabled</paper-button>
+  </template>
+    <script>
+        class PaperButtonElement extends Polymer.Element {
+            static get is() {
+                return "paper-button-element";
+            }
+            constructor() {
+                super();
+                console.log('PaperButtonElement DidLoaded');
+            }
+        }
+        customElements.define(PaperButtonElement.is, PaperButtonElement);
+    </script>
+</dom-module>
