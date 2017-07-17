@@ -1,10 +1,35 @@
 <dom-module id="paper-button-element">
     <template>
+      <style>
+        paper-button.pink {
+          --paper-button-ink-color: var(--paper-pink-a200);
+          color: var(--paper-pink-a200);
+        }
+        paper-button.indigo {
+           background-color: var(--paper-indigo-500);
+           color: white;
+        }
+        paper-button.green {
+          background-color: var(--paper-green-500);
+          color: white;
+        }
+        paper-button.green[active] {
+          background-color: var(--paper-red-500);
+        }
+      </style>
     <h3>Paper button</h3>
-    <paper-button class="pink">link</paper-button>
-    <paper-button raised class="indigo">raised</paper-button>
-    <paper-button toggles raised class="green">toggles</paper-button>
-    <paper-button disabled class="disabled">disabled</paper-button>
+    <paper-button class="pink">
+      <iron-icon icon="check"></iron-icon> link
+    </paper-button>
+    <paper-button raised class="indigo">
+      <iron-icon icon="check"></iron-icon> raised
+    </paper-button>
+    <paper-button toggles raised class="green">
+      <iron-icon icon="check"></iron-icon> toggles
+    </paper-button>
+    <paper-button disabled class="disabled">
+      <iron-icon icon="check"></iron-icon> disabled
+    </paper-button>
   </template>
     <script>
         class PaperButtonElement extends Polymer.Element {

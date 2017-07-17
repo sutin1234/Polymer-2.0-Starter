@@ -1,0 +1,18 @@
+<dom-module id="iron-icon-element">
+    <template>
+  <h4>Iron icons</h4>
+  <iron-icon icon="maps:directions-bus"></iron-icon>
+</template>
+    <script>
+        class IronIconElement extends Polymer.Element {
+            static get is() {
+                return "iron-icon-element";
+            }
+            constructor() {
+                super();
+                console.log('IronIconElement DidLoaded');
+            }
+        }
+        customElements.define(IronIconElement.is, IronIconElement);
+    </script>
+</dom-module>

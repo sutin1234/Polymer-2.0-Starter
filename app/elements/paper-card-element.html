@@ -1,0 +1,83 @@
+<dom-module id="paper-card-element">
+    <template>
+      <style is="custom-style">
+        paper-card {
+          --paper-card-header-color: #fff;
+          --paper-card-header-text: bold;
+          max-width: 500px;
+        }
+        body {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .cafe-header {
+          @apply --paper-font-headline;
+        }
+        .cafe-light {
+          color: var(--paper-grey-600);
+        }
+        .cafe-location {
+          float: right;
+          font-size: 15px;
+          vertical-align: middle;
+        }
+        .cafe-reserve {
+          color: var(--google-blue-500);
+        }
+        iron-icon.star {
+          --iron-icon-width: 16px;
+          --iron-icon-height: 16px;
+          color: var(--paper-amber-500);
+        }
+        iron-icon.star:last-of-type {
+          color: var(--paper-grey-500);
+        }
+      </style>
+      <custome-style></custome-style>
+      <h2>paper card elements</h2>
+    <paper-card heading="Card Title"
+                image="http://static.trustedreviews.com/94/00003aef0/2479_orh400w630/sierra.jpg"
+                elevation="3">
+    <div class="card-content">
+      <div class="cafe-header">Cafe Basilico
+        <div class="cafe-location cafe-light">
+          <iron-icon icon="communication:location-on"></iron-icon>
+          <span>250ft</span>
+        </div>
+      </div>
+      <div class="cafe-rating">
+        <iron-icon class="star" icon="star"></iron-icon>
+        <iron-icon class="star" icon="star"></iron-icon>
+        <iron-icon class="star" icon="star"></iron-icon>
+        <iron-icon class="star" icon="star"></iron-icon>
+        <iron-icon class="star" icon="star"></iron-icon>
+      </div>
+      <p>$・Italian, Cafe</p>
+      <p class="cafe-light">Small plates, salads &amp; sandwiches in an intimate setting.</p>
+    </div>
+    <div class="card-actions">
+      <div class="horizontal justified">
+        <paper-icon-button icon="icons:event"></paper-icon-button>
+        <paper-button>5:30PM</paper-button>
+        <paper-button>7:30PM</paper-button>
+        <paper-button>9:00PM</paper-button>
+        <paper-button class="cafe-reserve">Reserve</paper-button>
+      </div>
+    </div>
+    </paper-card>
+
+  </template>
+    <script>
+        class PaperCardElement extends Polymer.Element {
+            static get is() {
+                return "paper-card-element";
+            }
+            constructor() {
+                super();
+                console.log("PaperCardElement DidLoaded");
+            }
+        }
+        customElements.define(PaperCardElement.is, PaperCardElement);
+    </script>
+</dom-module>

@@ -4,6 +4,10 @@
         <paper-input></paper-input>
         <h3>Input Floating</h3>
         <paper-input always-float-label label="Floating label"></paper-input>
+          <paper-input label="email address">
+          <iron-icon icon="mail" slot="prefix"></iron-icon>
+          <div slot="suffix">@email.com</div>
+      </paper-input>
     </template>
     <script>
         class PaperInputElement extends Polymer.Element {

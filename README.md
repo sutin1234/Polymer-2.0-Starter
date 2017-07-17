@@ -34,6 +34,8 @@ http://127.0.0.1:8081/app
 - one way data binding
 - two way data binding
 - install paper-element#2.0
-- add & use paper-input#2.0-preview
+- add & use paper-input#2.0
 - add & use paper-button#2.0
+- add & use iron-icon#2.0
+- add & use paper-card#2.0
 
